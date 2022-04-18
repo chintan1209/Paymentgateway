@@ -1,0 +1,46 @@
+{
+  "version": "1.5.3",
+  "name": "sponsor",
+  "description": "A sponsors site built by Anurag, using stripe",
+  "main": "index.js",
+  "repository": "https://github.com/kr-anurag/sponsor.git",
+  "author": "Anurag <kr.anurag24@gmail.com>",
+  "license": "GPL-3.0",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "prepare": "husky install",
+    "pre-commit": "yarn run lint && git add -A .",
+    "release": "standard-version",
+    "release:minor": "standard-version --release-as minor",
+    "release:patch": "standard-version --release-as patch",
+    "release:major": "standard-version --release-as major"
+  },
+  "dependencies": {
+    "@chakra-ui/react": "^1.8.1",
+    "@emotion/react": "^11",
+    "@emotion/styled": "^11",
+    "@fontsource/inter": "^4.5.4",
+    "@stripe/stripe-js": "^1.22.0",
+    "axios": "^0.25.0",
+    "framer-motion": "^5",
+    "next": "^12.1.0",
+    "next-seo": "^4.29.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-icons": "^4.3.1",
+    "stripe": "^8.199.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^16.1.0",
+    "@commitlint/config-conventional": "^16.0.0",
+    "@types/react": "^17.0.38",
+    "eslint": "^8.7.0",
+    "eslint-config-next": "12.0.8",
+    "husky": "^7.0.4",
+    "standard-version": "^9.3.2",
+    "typescript": "^4.5.5"
+  }
+}
